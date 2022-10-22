@@ -69,7 +69,11 @@ get_node("generate").onclick = () => {
 
 document.onkeydown = (e) => {
 
-    if (e.target.nodeName === "INPUT") return // todo: nodeName or localName? 
+    // todo: nodeName or localName? 
+    switch (e.target.nodeName) {
+        case "INPUT": case "TEXTAREA": return
+        default: break
+    } 
 
     switch (e.key) {    
         case "Enter": case " ": {
@@ -77,6 +81,7 @@ document.onkeydown = (e) => {
             UI_draw_output()
             break
         }
+        default: break
     }
 }
 

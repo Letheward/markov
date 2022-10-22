@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+ 
+  <head>
+    <meta charset="utf-8">
+    <title>Markov Chain Text Generator</title>
+    <link href="css/styles.css" rel="stylesheet">
+    <script src="src/main.js" defer></script>
+  </head>
+  
+  <body>
+   
+    <header>
+      <div id="title"><div>Markov Chain Text Generator</div></div>
+      <div id="inputs">
+        <button id="generate">Generate</button>
+        <input id="output_length" placeholder="Output Length">
+        <button id="break_by_space">Mode: Unicode</button>
+      </div>
+    </header>
+    
+    <div id="main">
+      <div id="left_section">
+        <textarea id="text_input" placeholder="Input text goes here"></textarea>
+      </div>
+      <div id="right_section">
+        <p id="text_output"></p>
+      </div>
+    </div>
+  
+  </body>
+
+</html>

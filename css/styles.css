@@ -1,0 +1,182 @@
+/* ==== Main ==== */
+
+html {
+    height: 100%;
+}
+
+body {
+   
+    margin: 0;
+    height: 100%;
+    background-color: #ddd;
+
+    display: flex;
+    flex-direction: column;
+}
+
+div {
+    font-family: "微软雅黑", "Roboto", "Segoe UI", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+
+
+/* ==== Widgets ==== */
+
+button {
+    
+    font-family: "微软雅黑", "Roboto", "Segoe UI", sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+
+    padding: 10px;
+    margin: 10px;
+   
+    background: #eee;
+    border: none;
+    outline: none;
+    
+    transition: all .1s;
+}
+
+button:hover {
+    background: #ccc;
+}
+
+button:active {
+    background: #f0f0f0;
+}
+
+
+input {
+
+    padding: 10px;
+    margin: 10px;
+    background-color: #ccc;
+    
+    font-family: "微软雅黑", "Montserrat", "Roboto", "Segoe UI", sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    
+    outline: none;
+    border: none;
+}
+
+textarea {
+
+    padding: 20px;
+    background-color: #eee;
+    
+    font-family: "微软雅黑", "Montserrat", "Roboto", "Segoe UI", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    height: 100%;
+    
+    outline: none;
+    border: none;
+    resize: none;
+}
+
+#text_output {
+    
+    margin: 0;
+    font-size: 16px;
+    font-weight: 400;
+    
+    max-height: 88vh; /* "hack", solve this better */
+    overflow: auto;
+}
+
+
+
+/* ==== Layout ==== */
+
+header {
+    
+    flex: 1 0;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+
+#main {
+
+    flex: 15 0;
+   
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+
+header > #title {
+
+    flex: 1 0;
+    margin: 10px;
+    margin-right: 0;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#title > div {
+
+    font-family: "微软雅黑", "Montserrat", "Roboto", "Segoe UI", sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    padding-left: 2px;
+}
+
+header > #inputs {
+
+    flex: 1 0;
+    margin-left: 10px;
+    margin-right: 10px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+
+#generate {
+    flex: 2 0;
+    margin-left: 0px;
+}
+
+#break_by_space {
+    flex: 1;
+    margin-right: 0;
+}
+
+#left_section {
+
+    background-color: #fff;
+    
+    padding: 20px;
+    margin: 10px;
+    margin-top: 0;
+    margin-right: 10px;
+
+    min-width: 45vh;
+    flex: 1 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#right_section {
+    
+    background-color: #fff;
+    padding: 20px;
+    margin: 10px;
+    margin-left: 0;
+    margin-top: 0;
+    min-width: 45vh;
+    
+    flex: 1 0;
+}
+
